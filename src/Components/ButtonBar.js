@@ -1,4 +1,6 @@
 import React from "react";
+import '../App.css'; 
+
 
 function ButtonBar(props){
     return (
@@ -7,10 +9,8 @@ function ButtonBar(props){
             <button value={-1} onClick={props.handleIterate}>Back</button>
             <button value={1} onClick={props.handleIterate}>Next</button>
             <button value={5} onClick={props.handleIterate}>Big Next</button>
-            {/* the props.handleIterate will be passed in when calling on app.js */}
         </div>
     )
-
 }
 
-export default ButtonBar
+export default ButtonBar;
